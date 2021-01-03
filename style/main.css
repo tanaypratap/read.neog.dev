@@ -102,5 +102,10 @@ nav .nav-links .nav-item:hover {
     max-width: 800px;
     height: auto;
 }
-
 /* End Home Section */
+
+/* pages */
+.dummy-data {
+    margin: auto;
+    text-align: center;
+}
