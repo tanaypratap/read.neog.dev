@@ -1,0 +1,23 @@
+/* Responsive Stylesheet */
+@media (max-width: 524px) {
+    nav .container {
+        margin: auto;
+        padding: 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 1024px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #home .heroInfo {
+        margin-top: 5rem;
+    }
+}

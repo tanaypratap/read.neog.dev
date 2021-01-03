@@ -5,31 +5,29 @@
     box-sizing: border-box;
 }
 :root {
-    --bgColor: #F4F0F3;
+    --bgColor: #fcfcfc;
     --fontColor: #1f2933;
 
     --bgLight: #e3fdfd;
+    --shadow: 4px 4px 15px -2px rgba(34,62,67,0.6);
 }
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-display: swap;
-    background-color: var(--headerBg);
     color: var(--fontColor);
 }
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 1.5rem;
-}
+
 /* Navbar */
 nav .container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 1.5rem;
-    margin-bottom: 1rem;
+    padding: 2rem 1.5rem 1rem;
 }
 nav a {
     text-decoration: none;
@@ -53,4 +51,38 @@ nav .nav-links .nav-item:hover {
     background-color: var(--bgLight);
 }
 /* End Navbar */
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--bgColor);
+}
+.home-left {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.home-right {
+    flex: 1;
+}
+.heroInfo {
+    margin-top: 12rem;
+    padding-left: 1.5rem;
+}
+.heroInfo h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
+.heroInfo p {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
 
+.hero-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* End Home Section */
