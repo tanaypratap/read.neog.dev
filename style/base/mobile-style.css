@@ -1,0 +1,50 @@
+@import './main.css';
+/* Responsive Stylesheet */
+@media screen and (max-width: 668px) {
+    header {
+        padding: 0.5rem 0;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        width: 100%;
+        height: 100vh;
+    }
+    .nav-links.show-nav-links{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    #home .hero {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 998px) {
+    #home .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
