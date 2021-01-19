@@ -10,11 +10,14 @@
     /* neutral */
     --very-dark-gray-blue: hsl(237, 12%, 33%);
     --dark-gray-blue: hsl(240, 6%, 50%);
+    --bgLight: hsl(220, 23%, 97%);
 
     /* divider */
     --divider-gray-blue: hsl(240, 5%, 91%);
 
     /* shadow */
     --header-nav-shadow: 0 0 30px 0 rgba(0,0,0,.2);
+    --btn-success: hsl(162, 59%, 60%);
+    --btn-success-light: hsl(162, 60%, 82%);
 }
 
