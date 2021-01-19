@@ -23,6 +23,12 @@
         text-align: center;
         justify-content: center;
     }
+    #home .hero {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     #about .container {
         display: flex;
         justify-content: space-between;
@@ -33,5 +39,12 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 998px) {
+    #home .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
