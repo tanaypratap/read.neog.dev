@@ -22,6 +22,7 @@ body{
 a {
     text-decoration: none;
     color: var(--dark-desaturated-blue);
+    font-weight: 500;
 }
 .container {
     max-width: 1200px;
@@ -44,6 +45,12 @@ nav {
     list-style-type: none;
     display: inline;
     margin: 1rem;
+}
+.nav-links .nav-item a.active {
+    color: var(--soft-red);
+}
+.nav-links .nav-item a:hover {
+    color: var(--soft-red);
 }
 .menu {
     cursor: pointer;
@@ -135,7 +142,22 @@ nav {
     font-size: 36px;
 }
 /* end about */
-
+/* footer */
+footer {
+    margin: 2rem auto;
+    padding: 2rem 0;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+footer ul li {
+    list-style: none;
+    display: inline;
+    margin: 1.5rem;
+}
+/* end footer */
 .pop-up {
     background-image: url(../../images/popup.jpg);
     background-position: 50%;
