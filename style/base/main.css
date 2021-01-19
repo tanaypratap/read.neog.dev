@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import '../theme.css';
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
     --bgColor: #fcfcfc;
     --fontColor: #1f2933;
     
-    --bgLight: #e3fdfd;
+    --bgLight: #f7f8fa;
     --buttonColor: #3B82F6;
     --shadow: 4px 4px 15px -2px rgba(34,62,67,0.6);
 }
@@ -16,93 +17,133 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-display: swap;
-    color: var(--fontColor);
+    color: var(--dark-desaturated-blue);
 }
-
-/* Navbar */
-nav .container {
-    max-width: 1300px;
+a {
+    text-decoration: none;
+    color: var(--dark-desaturated-blue);
+}
+.container {
+    max-width: 1200px;
     margin: auto;
-    padding: 0 1.5rem;
+    padding: 1rem;
+}
+/* Navbar */
+
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem 1.5rem 1rem;
+    align-items: flex-end;
 }
-nav a {
-    text-decoration: none;
-    color: var(--fontColor);
+.navbar-brand h1 {
+    font-size: 32px;
+    font-weight: 400;
 }
-nav .navbar-brand a {
-    font-weight: 600;
-    font-size: 24px;
+.nav-links .nav-item{
+    list-style-type: none;
+    display: inline;
+    margin: 1rem;
 }
-nav .nav-links .nav-item {
-    border-radius: 0.25rem;
-    line-height: 1.5rem;
-    padding: 0.5rem 0.75rem;
-    transition: all 300ms;
+.menu {
+    cursor: pointer;
+    display: none;
 }
-nav .nav-links a.active {
-    font-weight: 600;
-    background-color: var(--bgLight);
+.menu:focus {
+    outline: none;
 }
-nav .nav-links .nav-item:hover {
-    background-color: var(--bgLight);
+.menu.show-menu {
+    display: block;
+}
+.menu span {
+    display: block;
+    margin: 5px;
+    background-color: #1d7770;
+    border-radius: 5px;
+    width: 40px;
+    height: 4px;
+}
+.menu span:nth-child(1) {
+    width: 15px;
+    height: 4px;
+}
+.menu span:nth-child(3) {
+    width: 20px;
+    height: 4px;
 }
 /* End Navbar */
 /* Home Section */
 #home {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--bgColor);
-}
-.home-left {
-    display: flex;
-    justify-content: center;
-    flex: 1;
-}
-.home-right {
-    flex: 1;
-}
-.heroInfo {
-    margin-top: 12rem;
-    padding-left: 1.5rem;
-}
-.heroInfo h1 {
-    font-size: 42px;
-    font-weight: 600;
-}
-.heroInfo p {
-    font-size: 20px;
-    margin-bottom: 1rem;
-}
-.heroInfo .button {
-    font-size: 16px;
-    border-radius: 8px;
-    padding: 8px 20px;
-    color: #ffffff;
-    background-color: var(--buttonColor);
-    border: 3px solid var(--buttonColor);
-    cursor: pointer;
+    padding-top: 15px;
+    display: block;
+    margin: auto;
     text-align: center;
-    transition: all 250ms;
-    box-shadow: var(--shadow)
+    background-color: var(--bgLight);
 }
-.button:hover {
-    transform: scale(0.98);
+.hero-text {
+    max-width: 600px;
+    margin: 1rem auto;
 }
-.button:focus {
-    outline: none;
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 500;
+}
+.hero-text p {
+    color: var(--very-dark-gray-blue);
 }
 .hero-img {
+    margin: 1.5rem auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     height: auto;
 }
-/* End Home Section */
+.btn {
+    font-size: .875rem;
+    font-family: Poppins,sans-serif;
+    padding: .625rem 1.25rem;
+    outline: none;
+    margin: 0.5rem;
+}
+.btn-opacity-success {
+    background-color: #5ed6b3;
+    
+    border: 2px solid transparent;
+    transition: all .5s ease-in-out;
+}
+.btn-opacity-success:hover {
+    background-color: #b7eddd;
+    border: 2px solid #5ed6b3;
+}
+
+/* about */
+#about {
+    margin: 2rem auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+#about .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#about .container div {
+    text-align: left;
+    flex: 1;
+    margin: 2rem 1rem;
+}
+#about h1 {
+    font-size: 36px;
+}
+/* end about */
+
+.pop-up {
+    background-image: url(../../images/popup.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 83px 0 68px;
+}
 
 /* pages */
 .dummy-data {
