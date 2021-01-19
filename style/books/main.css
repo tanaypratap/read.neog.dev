@@ -1,0 +1,26 @@
+.books {
+    margin-top: 5em;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cover {
+    width: 20em;
+}
+
+.text {
+    /* margin-left: 5em; */
+}
+
+.text > p {
+    width: 30em;
+    margin-top: 1.5em;
+}
+
+.button {
+    background-color: #eb6565;
+    padding: 0.8em;
+    border-radius: 1em;
+    border: none;
+    margin-top: 1.5em;
+}

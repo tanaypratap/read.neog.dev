@@ -5,6 +5,20 @@
     margin-right: auto;
 }
 
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+@media (max-width: 767px){
+    .flex{
+        flex-direction: column;
+    }
+}
+
 /* mobile landscape */
 @media (min-width: 440px) and (max-width: 767px){
     .container{
