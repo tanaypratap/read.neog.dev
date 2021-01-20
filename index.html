@@ -7,11 +7,16 @@
     <!--Stylesheet-->
     <link rel="stylesheet" type="text/css" href="./style/base/main.css">
     <link rel="stylesheet" type="text/css" href="./style/base/mobile-style.css">
+
+    <!-- global contains styling for navbar, footer, container etc -->
+    <link rel="stylesheet" href="/style/base/global.css">
+    <!-- helpers contains classes for margin, padding, layouts  -->
+    <link rel="stylesheet" href="/style/helpers.css">
 </head>
 <body>
 
    <header>
-    <nav class="container">
+    <!-- <nav class="container">
         <div class="navbar-brand">
             <a href="#"><h1>NeoG Camp</h1></a>
         </div>
@@ -26,6 +31,32 @@
             <li class="nav-item"><a href="./pages/books.html">Books</a></li>
             <li class="nav-item"><a href="./pages/pages.html">Resource</a></li>
         </ul>
+    </nav> -->
+    <!-- new Navbar -->
+    <nav class="site-navbar" role="navigation">
+        <div class="container site-nav" >
+            <!-- site logo -->
+            <a href="#" class="nav-brand">Read.Neog</a>
+
+            <!-- menu -->
+            <div class="nav-menu">
+                <div class="btn-menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>    
+                </div>
+                <ul class="list-inline" id="menu">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="./pages/books.html">Books</a></li>
+                    <li class="nav-item"><a href="./pages/pages.html">Resources</a></li>
+                </ul>
+                <!-- <ul class="" id="menu-mobile">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="./pages/books.html">Books</a></li>
+                    <li class="nav-item"><a href="./pages/pages.html">Resources</a></li>
+                </ul> -->
+            </div>
+        </div>
     </nav>
    </header>
 
