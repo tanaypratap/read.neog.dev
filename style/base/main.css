@@ -18,11 +18,7 @@ a {
     color: var(--dark-desaturated-blue);
     font-weight: 500;
 }
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-}
+
 /* Navbar */
 
 nav {
