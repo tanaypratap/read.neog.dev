@@ -1,0 +1,93 @@
+/* 
+    This file contains css for components(example- Navbar, container, footer) used on multiple pages.
+    
+    Ordering followed is - 
+    1. html tags
+    2. classes
+    3. media queries
+*/
+nav.site-navbar .site-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav.site-navbar .nav-brand{
+    padding: 10px;
+    font-size: 1.5rem;
+    color: dodgerblue;
+}
+nav.site-navbar .nav-item{
+    padding: 10px;
+}
+
+/* Other Classes */
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------- MEDIA QUERIES -------- */
+/* mobile */
+@media (max-width: 767px){
+    #menu{
+        display: block;
+    }
+    .btn-menuToggle span
+    {
+        display: flex;
+        width: 29px;
+        height: 2px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #ffffff;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 5px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+
+    .btn-menuToggle span:first-child
+    {
+        transform-origin: 0% 0%;
+    }
+
+    .btn-menuToggle span:nth-last-child(2)
+    {
+        transform-origin: 0% 100%;
+    }
+
+    /* #menu-mobile{
+        display: block;
+    }
+    #menu-desktop{
+        display: none;
+    } */
+    .container{
+        width: 90%;
+    }
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 991px){
+    #menu-mobile{
+        display: none;
+    }
+    .container{
+        width: 90%;
+        max-width: 800px;
+    }
+}
+
+/* desktop */
+@media (min-width: 992px){
+    #menu-mobile{
+        display: none;
+    }
+    .container{
+        width: 90%;
+        max-width: 1200px;
+    }
+}
