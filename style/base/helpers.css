@@ -1,16 +1,24 @@
-/* container */
-.container{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
+/*  
+    This file contains utility classes to make development faster and efficient.
+    Contents:
+    1. Layout classes
+    2. Other classes
+    3. Media queries
+    4. Padding & Margins
+*/
 
+/* ---------- Layout classes ---------- */
 .flex{
     display: flex;
 }
-
 .justify-center{
     justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
 }
 
 @media (max-width: 767px){
@@ -19,29 +27,11 @@
     }
 }
 
-/* mobile landscape */
-@media (min-width: 440px) and (max-width: 767px){
-    .container{
-        width: 90%;
-    }
+/*  -------- Other classes --------- */
+.list-inline{
+    display: flex;
+    list-style-type: none;
 }
-
-/* tabs */
-@media (min-width: 768px) and (max-width: 991px){
-    .container{
-        width: 90%;
-        max-width: 800px;
-    }
-}
-
-/* desktop */
-@media (min-width: 992px){
-    .container{
-        width: 90%;
-        max-width: 1200px;
-    }
-}
-/*  */
 .text-center{
     text-align: center;
 }
@@ -53,6 +43,24 @@
     border: 2px solid yellow;
 }
 
+
+/* -------- Media Queries -------- */
+/* mobile */
+@media (max-width: 767px){
+
+}
+
+/* tabs */
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+/* desktop */
+@media (min-width: 992px){
+
+}
+
+/* ----------- Margin & Padding ---------- */
 /* padding-vertical */
 .py-1{
     padding-top: 4px;
