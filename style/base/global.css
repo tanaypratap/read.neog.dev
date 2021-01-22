@@ -75,6 +75,12 @@ a {
     font-weight: 500;
 }
 
+main.site-content{
+    /* make footer stay at bottom */
+    /* 100viewHeight - (navbar height + footer height) */
+    min-height: calc(100vh - (65px + 176px));
+}
+
 /* FOOTER */
 footer{
     background-color: var(--dark-desaturated-blue);
