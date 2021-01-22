@@ -1,4 +1,4 @@
-@import './base/main.css';
+@import './base/theme.css';
 #home {
     padding-top: 15px;;
     background-color: var(--bgLight);
@@ -7,7 +7,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 80vh;
+    padding-bottom: 1rem;
+    /* min-height: 80vh; */
 }
 .hero-text {
     flex: 1;
@@ -77,3 +78,30 @@
 }
 
 /* end about */
+
+/* ------- MEDIA Queries imported from mobile-style.css ------- */
+@media screen and (max-width: 668px) {
+    header {
+        padding: 0.5rem 0;
+    }
+    #home .hero {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    #about .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    #home .hero {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+}
